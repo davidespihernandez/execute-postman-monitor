@@ -11,7 +11,7 @@ name: Execute Postman Monitor
 on:
   pull_request:
 jobs:
-  sync-with-postman-api:
+  execute-postman-monitor:
     runs-on: ubuntu-latest
     steps:
       - name: Execute Postman Monitor

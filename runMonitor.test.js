@@ -20,7 +20,7 @@ describe('test runMonitor', () => {
         expect(getAxiosConfig).toHaveBeenCalledWith('API_KEY');
         expect(axiosPost).toHaveBeenCalledWith(
             `${POSTMAN_API_BASE_URL}/monitors/MONITOR_ID/run`,
-            null,
+            {},
             {},
         );
         expect(monitorStatus).toEqual("success")

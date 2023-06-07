@@ -14,6 +14,7 @@ async function run() {
     const result = await runMonitor(postmanApiKey, monitorId);
 
     core.setOutput('status', result);
+    core.info(`Monitor result: ${result}`);
   } catch (error) {
     let message = error.message;
     if (error.response) {

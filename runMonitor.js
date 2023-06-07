@@ -8,7 +8,7 @@ const runMonitor = async (postmanApiKey, monitorId) => {
     core.info(`Executing monitor via Postman API: ${url} ...`);
     const response = await axios.post(
         url,
-        null,
+        '',
         getAxiosConfig(postmanApiKey),
     );
     core.debug(`Postman API POST monitor run response code: ${response.status}`);
